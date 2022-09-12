@@ -1,0 +1,18 @@
+{
+  "name": "family-budget-api",
+  "version": "1.0.0",
+  "description": "Family Budget Control app",
+  "main": "index.js",
+  "repository": "git@github.com:rubenqba/budget-api.git",
+  "author": "Ruben Bresler <111847+rubenqba@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "liquibase": "^4.4.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.8.0",
+    "sequelize": "^6.21.6"
+  }
+}
