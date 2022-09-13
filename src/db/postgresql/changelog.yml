@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - property:
+      dbms:  postgresql
+      name:  scheme
+      value:  public
+  - include:
+      file: src/db/postgresql/01__add_base_tables.yml

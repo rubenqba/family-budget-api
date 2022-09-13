@@ -2,15 +2,21 @@
   "name": "family-budget-api",
   "version": "1.0.0",
   "description": "Family Budget Control app",
-  "main": "index.js",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": "git@github.com:rubenqba/budget-api.git",
   "author": "Ruben Bresler <111847+rubenqba@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "joi": "^17.6.0",
     "liquibase": "^4.4.0",
+    "node-liquibase": "^4.1.1",
     "nodemon": "^2.0.19",
     "pg": "^8.8.0",
     "sequelize": "^6.21.6"

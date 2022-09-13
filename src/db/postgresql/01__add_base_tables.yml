@@ -1,0 +1,22 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: rbresler
+      changes:
+        - createTable:
+            schemaName: ${scheme}
+            tableName: categories
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(50)
+              - column:
+                  name: parent
+                  type: bigint

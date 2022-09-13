@@ -1,9 +1,9 @@
 const { Sequelize } = require('sequelize');
+const { database } = require('./constants');
 
 // Option 3: Passing parameters separately (other dialects)
-// const sequelize = new Sequelize('family-budget', 'budget', 'password', {
-//     host: 'localhost',
-//     dialect: 'postgres'
-// });
+module.exports = new Sequelize(database.name, database.user, database.password, {
+    host: database.host,
+    dialect: 'postgres'
+});
 
-export.modules =  new Sequelize('sqlite::memory:');
